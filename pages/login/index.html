@@ -4,13 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="../../styles/navbar.css" />
+    <link rel="stylesheet" href="../../styles/positioning.css" />
+    <link rel="stylesheet" href="../../styles/texts.css" />
+    <link rel="stylesheet" href="../../styles/inputs.css" />
+    <link rel="stylesheet" href="../../styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Login</title>
   </head>
   <body>
+    <nav class="navbar flex items-center justify-between fixed">
+      <h2 class="navbar-logo">TechPosters</h2>
+      <div>
+        <button class="navbar-buttons">Login</button>
+        <button class="navbar-buttons">Registro</button>
+      </div>
+    </nav>
     <main>
-      <form></form>
+      <div>
+        <form>
+          <h2>Login</h2>
+          <input class="inputs-initial" type="email" placeholder="Seu e-mail" />
+          <input
+            class="inputs-initial"
+            type="password"
+            name=""
+            id=""
+            placeholder="Sua senha"
+          />
+          <button class="button-loginArea">Logar</button>
+          <span class="f-size-12">Ainda não possui cadastro</span>
+          <button class="button-register">Ir para página de registro</button>
+        </form>
+      </div>
     </main>
   </body>
   <script src="/script/visualComponents/modal.js"></script>

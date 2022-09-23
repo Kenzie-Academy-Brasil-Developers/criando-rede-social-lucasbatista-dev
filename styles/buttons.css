@@ -1,0 +1,92 @@
+.button-defaut {
+  width: 54px;
+  height: 38px;
+}
+.button-loginArea {
+  width: 413px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 10px;
+  background-color: var(--brand-color-1);
+  color: var(--gray-white-fixed);
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.button-register {
+  width: 413px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 10px;
+  background-color: var(--gray-white-fixed);
+  color: black;
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.button-back {
+  width: 63px;
+  height: 28px;
+  padding: 0px 12px;
+  gap: 10px;
+  background-color: var(--gray-white-fixed);
+  color: black;
+  border: 1px solid black;
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 17px;
+}
+.button-post {
+  width: 69px;
+  height: 38px;
+  padding: 0px 12px;
+  gap: 10px;
+  background-color: var(--gray-color-4);
+  color: var(--gray-color-3);
+  border-radius: 4px;
+  border: none;
+}
+.button-openPost {
+  width: 92px;
+  height: 38px;
+  background-color: var(--gray-color-1);
+  color: var(--gray-white-fixed);
+  border: 2px solid #212529;
+  border-radius: 4px;
+  padding: 0px 12px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+}
+.button-following {
+  width: 89px;
+  height: 28px;
+  background-color: var(--brand-color-1);
+  border: 1px solid #4263eb;
+  padding: 0px 12px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray-white-fixed);
+}
+.button-closeModal {
+  width: 20px;
+  height: 20px;
+  margin-left: 360px;
+  background-color: var(--gray-white-fixed);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}

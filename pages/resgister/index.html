@@ -4,13 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/navbar.css" />
+    <link rel="stylesheet" href="../../styles/positioning.css" />
+    <link rel="stylesheet" href="../../styles/sizes.css" />
+    <link rel="stylesheet" href="../../styles/texts.css" />
+    <link rel="stylesheet" href="../../styles/inputs.css" />
+    <link rel="stylesheet" href="../../styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Cadastro</title>
   </head>
   <body>
-    <nav></nav>
+    <nav class="navbar flex items-center justify-between fixed">
+      <h2 class="navbar-logo">TechPosters</h2>
+      <div>
+        <button class="navbar-buttons">Login</button>
+        <button class="navbar-buttons">Registro</button>
+      </div>
+    </nav>
     <main>
-      <form></form>
+      <div>
+        <form>
+          <div class="wsize-100 flex justify-between">
+            <h2>Cadastro</h2>
+            <button class="button-back">voltar</button>
+          </div>
+          <input class="inputs-initial" type="text" placeholder="Seu nome" />
+          <input class="inputs-initial" type="email" placeholder="Seu e-mail" />
+          <input
+            class="inputs-initial"
+            type="password"
+            name=""
+            id=""
+            placeholder="Sua senha"
+          />
+          <input
+            class="inputs-initial"
+            type="text"
+            placeholder="Qual o seu trabalho?"
+          />
+          <input
+            class="inputs-initial"
+            type="text"
+            placeholder="URL da imagem de perfil"
+          />
+          <button class="button-loginArea">Registrar</button>
+          <span class="f-size-12">Já possui login?</span>
+          <button class="button-register">Ir para página de login</button>
+        </form>
+      </div>
     </main>
   </body>
   <script src="/script/visualComponents/modal.js"></script>

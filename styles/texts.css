@@ -1,0 +1,45 @@
+.f-size-10 {
+  font-size: 0.625rem;
+}
+.f-size-12 {
+  font-size: 0.75rem;
+}
+.f-size-14 {
+  font-size: 0.875rem;
+}
+.f-size-16 {
+  font-size: 1rem;
+}
+.f-size-18 {
+  font-size: 1.125rem;
+}
+.f-size-20 {
+  font-size: 1.25rem;
+}
+.f-size-24 {
+  font-size: 1.5rem;
+}
+.f-size-28 {
+  font-size: 1.75rem;
+}
+.f-weight-400 {
+  font-weight: 400;
+}
+.f-weight-600 {
+  font-weight: 600;
+}
+.f-weight-700 {
+  font-weight: 700;
+}
+.l-weight-40 {
+  line-height: 2.5rem;
+}
+.l-weight-28 {
+  line-height: 1.75rem;
+}
+.l-weight-24 {
+  line-height: 1.5rem;
+}
+.l-weight-16 {
+  line-height: 1rem;
+}

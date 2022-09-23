@@ -1,0 +1,26 @@
+.inputs-initial {
+  width: 25.813rem;
+  height: 3.25rem;
+  border: 1px solid var(--gray-color-4);
+  padding: 1rem 1.25rem;
+  color: var(--gray-color-2);
+}
+.inputs-titleText {
+  width: 385px;
+  height: 52px;
+  padding: 28px 21px 29px;
+  gap: 10px;
+  border: 2px solid;
+  color: var(--gray-color-2);
+  border-color: var(--gray-color-4);
+}
+.inputs-descriptionText {
+  width: 385px;
+  height: 130px;
+  padding: 28px 21px 29px;
+  gap: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  color: var(--gray-color-2);
+  border-color: var(--gray-color-4);
+}

@@ -4,16 +4,209 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/positioning.css" />
+    <link rel="stylesheet" href="/styles/sizes.css" />
+    <link rel="stylesheet" href="/styles/texts.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/inputs.css" />
+    <link rel="stylesheet" href="/styles/imgs.css" />
+    <link rel="stylesheet" href="/styles/colors.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Home</title>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="sizes__body">
+    <nav class="mobile-navbar fixed">
+      <h2 class="navbar-logo">TechPosters</h2>
+      <div>
+        <button class="navbar-buttons">Sair</button>
+      </div>
+    </nav>
+    <main class="container-main">
+      <section class="container-post">
+        <div class="container-user">
+          <img class="imgs-users" src="../../assets/img/user1.svg" alt="" />
+          <div class="flex flex-col hsize-100 mleft-12">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer</p>
+          </div>
+        </div>
+        <div class="container-texts">
+          <input
+            class="inputs-titleText"
+            type="text"
+            placeholder="Digitar título do post"
+          />
+          <input
+            class="inputs-descriptionText"
+            type="text"
+            placeholder="Digitar descrição do post"
+          />
+          <button class="button-post">Postar</button>
+        </div>
+      </section>
+      <section class="container-suggestions">
+        <h2>Sugestões para você seguir</h2>
+        <ul class="flex">
+          <li>
+            <div class="container-userSuggestions">
+              <img class="imgs-users" src="../../assets/img/user3.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">Carlos Lima</p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  UX e UI Designer
+                </p>
+              </div>
+            </div>
+            <button class="button-following mtop-15">Seguindo</button>
+          </li>
+          <li>
+            <div class="container-userSuggestions">
+              <img class="imgs-users" src="../../assets/img/user3.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">Carlos Lima</p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  UX e UI Designer
+                </p>
+              </div>
+            </div>
+            <button class="button-following mtop-15">Seguindo</button>
+          </li>
+        </ul>
+      </section>
+      <section class="containerFeed">
+        <h2 class="f-size-28 f-weight-700 l-weight-40">Posts</h2>
+        <ul>
+          <li>
+            <div class="container-userPosts">
+              <img class="imgs-users" src="../../assets/img/user4.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">Carla Maria</p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  Back end Engineer
+                </p>
+              </div>
+            </div>
+            <h2 class="mtop-32 f-size-28 f-weight-700 l-weight-40">
+              Como melhorar sua lógica de programação? Desenvolvemos 5 passos
+              para te ajudar
+            </h2>
+            <p class="mtop-20 f-size-16 f-weight-400 l-weight-28 .gray-2">
+              Para quem está começando na área de T.I, em pleno século 21 este
+              conceito pode parecer um grande desafio, pois requer muitas
+              habilidades em diversas áreas de estudo, principalmente...
+            </p>
+            <div class="foter-post mtop-32">
+              <button data-control-modal="open-modal" class="button-openPost">
+                Abrir Post
+              </button>
+              <img class="mleft-32" src="../../assets/img/Vector.svg" alt="" />
+              <small class="mleft-7 f-size-14 f-weight-400 l-weight-16"
+                >19</small
+              >
+            </div>
+          </li>
+          <li>
+            <div class="container-userPosts">
+              <img class="imgs-users" src="../../assets/img/user2.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">Samuel Persuhn</p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  Front end Engineer
+                </p>
+              </div>
+            </div>
+            <h2 class="mtop-32 f-size-28 f-weight-700 l-weight-40">
+              Empresa de Tecnologia da Informação abre vagas para programa de
+              estágio
+            </h2>
+            <p class="mtop-20 f-size-16 f-weight-400 l-weight-28 .gray-2">
+              A Generic Digital, empresa natalence especializada em Tecnologia
+              da Informação, irá iniciar o seu sexto programa de estágio, com o
+              prazo de inscrições entre os dias 10 e 28 de agosto.
+            </p>
+            <div class="foter-post mtop-32">
+              <button data-control-modal="open-modal" class="button-openPost">
+                Abrir Post
+              </button>
+              <img
+                class="mleft-32"
+                src="../../assets/img/Vector (1).svg"
+                alt=""
+              />
+              <small class="mleft-7 f-size-14 f-weight-400 l-weight-16"
+                >25</small
+              >
+            </div>
+          </li>
+          <li>
+            <div class="container-userPosts">
+              <img class="imgs-users" src="../../assets/img/user1.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">Samuel Persuhn</p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  Front end Engineer
+                </p>
+              </div>
+            </div>
+            <h2 class="mtop-32 f-size-28 f-weight-700 l-weight-40">
+              Como criar um interface simples e agradável utilizando boas
+              práticas de design
+            </h2>
+            <p class="mtop-20 f-size-16 f-weight-400 l-weight-28 .gray-2">
+              Hoje vamos conversar sobre como criar uma interface agradável
+              mesmo sem ter um design pronto feito por um profissional de UI
+              design.
+            </p>
+            <div class="foter-post mtop-32">
+              <button data-control-modal="open-modal" class="button-openPost">
+                Abrir Post
+              </button>
+              <img class="mleft-32" src="../../assets/img/Vector.svg" alt="" />
+              <small class="mleft-7 f-size-14 f-weight-400 l-weight-16"
+                >25</small
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="div-modalWrapper" id="open-modal">
+        <div class="container-modal">
+          <button data-control-modal="open-modal" class="button-closeModal">
+            X
+          </button>
+          <div class="container-userPosts">
+            <img class="imgs-users" src="../../assets/img/user1.svg" alt="" />
+            <div class="mleft-12 flex flex-col justify-around">
+              <p class="f-size-20 f-weight-600 l-weight-24">Samuel Leão</p>
+              <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                Front end Engineer
+              </p>
+            </div>
+          </div>
+          <h2 class="mtop-32 f-size-28 f-weight-700 l-weight-40">
+            Como criar um interface simples e agradável utilizando boas práticas
+            de design
+          </h2>
+          <p class="mtop-20 f-size-16 f-weight-400 l-weight-28 .gray-2">
+            Hoje vamos conversar sobre como criar uma interface agradável mesmo
+            sem ter um design pronto feito por um profissional de UI design.<br /><br />
+            Antes de iniciar a criação de qualquer projeto, busque referências
+            de aplicações que tenham a ver com o nicho que você está
+            desenvolvendo. Por exemplo, quando quero criar um e-commerce de
+            roupas, vou reservar um momento para buscar por aplicações do
+            gênero, tanto acessando ou baixando apps e vendo o que se repete de
+            informações em cada um dos aplicativos e sites referentes a compra
+            de roupas, e também, observar cores que normalmente você enxerga em
+            cada um dos apps.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
   </body>
   <script src="/script/database/users.js"></script>
   <script src="/script/database/posts.js"></script>
   <script src="/script/database/sugestUsers.js"></script>
-  <script src="index.js"></script>
 </html>
