@@ -8,6 +8,7 @@
 .inputs-titleText {
   width: 385px;
   height: 52px;
+  margin-bottom: 27px;
   padding: 28px 21px 29px;
   gap: 10px;
   border: 2px solid;
@@ -17,10 +18,22 @@
 .inputs-descriptionText {
   width: 385px;
   height: 130px;
+  margin-bottom: 27px;
   padding: 28px 21px 29px;
   gap: 10px;
   border: 2px solid;
   border-radius: 4px;
   color: var(--gray-color-2);
   border-color: var(--gray-color-4);
+}
+@media (min-width: 800px) {
+  .inputs-titleText {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+
+  .inputs-descriptionText {
+    width: 100%;
+    margin-bottom: 27px;
+  }
 }

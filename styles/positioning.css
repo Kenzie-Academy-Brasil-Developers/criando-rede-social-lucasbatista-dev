@@ -48,8 +48,23 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .relative {
   position: relative;
+}
+
+.overflow-x {
+  overflow-x: auto;
+}
+
+@media (min-width: 800px) {
+  .sticky {
+    position: sticky;
+    top: 120px;
+  }
+  .absolute {
+    position: absolute;
+  }
 }
