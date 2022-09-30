@@ -58,13 +58,3 @@
 .overflow-x {
   overflow-x: auto;
 }
-
-@media (min-width: 800px) {
-  .sticky {
-    position: sticky;
-    top: 120px;
-  }
-  .absolute {
-    position: absolute;
-  }
-}

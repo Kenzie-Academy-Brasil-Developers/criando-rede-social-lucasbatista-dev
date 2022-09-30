@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Home</title>
   </head>
-  <body class="sizes__body container absolute">
+  <body>
     <nav class="mobile-navbar fixed navbar">
       <h2 class="navbar-logo">TechPosters</h2>
       <div>
@@ -24,87 +24,73 @@
       </div>
     </nav>
     <main class="container-main">
-      <div class="container-top">
-        <section class="container-post">
-          <div class="container-user">
-            <img class="imgs-users" src="../../assets/img/user1.svg" alt="" />
-            <div class="flex flex-col hsize-100 mleft-12">
-              <h2>Samuel Leão</h2>
-              <p>Front end Engineer</p>
+      <section class="container-post">
+        <div class="container-user">
+          <img class="imgs-users" src="../../assets/img/user1.svg" alt="" />
+          <div class="flex flex-col hsize-100 mleft-12">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer</p>
+          </div>
+        </div>
+        <div class="container-texts">
+          <input
+            class="inputs-titleText"
+            type="text"
+            placeholder="Digitar título do post"
+          />
+          <input
+            class="inputs-descriptionText"
+            type="text"
+            placeholder="Digitar descrição do post"
+          />
+          <button class="button-post">Postar</button>
+        </div>
+      </section>
+      <section class="container-suggestions">
+        <h2 class="mleft-20">Sugestões para você seguir</h2>
+        <ul class="container-suggestion flex">
+          <li>
+            <div class="container-userSuggestions">
+              <img class="imgs-users" src="../../assets/img/user3.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">Carlos Lima</p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  UX e UI Designer
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="container-texts">
-            <input
-              class="inputs-titleText"
-              type="text"
-              placeholder="Digitar título do post"
-            />
-            <input
-              class="inputs-descriptionText"
-              type="text"
-              placeholder="Digitar descrição do post"
-            />
-            <button class="button-post">Postar</button>
-          </div>
-        </section>
-        <section class="container-suggestions sticky">
-          <h2 class="mleft-20">Sugestões para você seguir</h2>
-          <ul class="container-suggestion flex overflow-x">
-            <li>
-              <div class="container-userSuggestions">
-                <img
-                  class="imgs-users"
-                  src="../../assets/img/user3.svg"
-                  alt=""
-                />
-                <div class="mleft-12 flex flex-col justify-around">
-                  <p class="f-size-20 f-weight-600 l-weight-24">Carlos Lima</p>
-                  <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
-                    UX e UI Designer
-                  </p>
-                </div>
+            <button class="button-following mtop-15">Seguindo</button>
+          </li>
+          <li>
+            <div class="container-userSuggestions">
+              <img class="imgs-users" src="../../assets/img/user6.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">
+                  Larissa Camargo
+                </p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  UI Developer
+                </p>
               </div>
-              <button class="button-following mtop-15">Seguindo</button>
-            </li>
-            <li>
-              <div class="container-userSuggestions">
-                <img
-                  class="imgs-users"
-                  src="../../assets/img/user6.svg"
-                  alt=""
-                />
-                <div class="mleft-12 flex flex-col justify-around">
-                  <p class="f-size-20 f-weight-600 l-weight-24">
-                    Larissa Camargo
-                  </p>
-                  <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
-                    UI Developer
-                  </p>
-                </div>
+            </div>
+            <button class="button-following mtop-15">Seguindo</button>
+          </li>
+          <li>
+            <div class="container-userSuggestions">
+              <img class="imgs-users" src="../../assets/img/user7.svg" alt="" />
+              <div class="mleft-12 flex flex-col justify-around">
+                <p class="f-size-20 f-weight-600 l-weight-24">
+                  Filipe Gutierry
+                </p>
+                <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
+                  Full Stack Developer
+                </p>
               </div>
-              <button class="button-following mtop-15">Seguindo</button>
-            </li>
-            <li>
-              <div class="container-userSuggestions">
-                <img
-                  class="imgs-users"
-                  src="../../assets/img/user7.svg"
-                  alt=""
-                />
-                <div class="mleft-12 flex flex-col justify-around">
-                  <p class="f-size-20 f-weight-600 l-weight-24">
-                    Filipe Gutierry
-                  </p>
-                  <p class="f-size-14 f-weight-400 l-weight-16 gray-2">
-                    Full Stack Developer
-                  </p>
-                </div>
-              </div>
-              <button class="button-following mtop-15">Seguindo</button>
-            </li>
-          </ul>
-        </section>
-      </div>
+            </div>
+            <button class="button-following mtop-15">Seguindo</button>
+          </li>
+        </ul>
+      </section>
       <section class="containerFeed">
         <h2 class="f-size-28 f-weight-700 l-weight-40">Posts</h2>
         <ul>
@@ -355,7 +341,4 @@
     </main>
     <script src="index.js"></script>
   </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
 </html>
